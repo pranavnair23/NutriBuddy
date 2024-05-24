@@ -1,0 +1,9 @@
+streamlit
+//streamlit_option_menu
+opencv-python-headless
+numpy
+pillow
+cv2
+openai
+mysql.connector
+matplotlib.pyplot
