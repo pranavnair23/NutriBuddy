@@ -131,7 +131,7 @@ def main():
         values = [protein, total_fat, carbohydrates]
 
         plt.style.use('bmh')
-        fig, ax = plt.subplots(figsize=(6, 5))
+        fig, ax = plt.subplots(figsize=(8, 8))
         ax.pie(values, labels=labels, autopct='%1.1f%%', startangle=90)
         ax.axis('equal')
 
