@@ -5,7 +5,7 @@ import os
 
 def main():
 
-    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    client = OpenAI(api_key=st.secrets["openai_key"])
 
     st.set_page_config(
     page_title="Assistant",
