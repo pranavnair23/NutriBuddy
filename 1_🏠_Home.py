@@ -84,7 +84,7 @@ def main():
         
         st.header(details[1])
 
-        col1, col2= st.columns([3,1])
+        col1, col2= st.columns([2,1])
         with col1:
             st.image(details[2])
         with col2:
