@@ -42,7 +42,8 @@ def main():
         st.session_state['prodNo'] = None
 
 
-    st.markdown("<h1 style='text-align: center; '>NutriBuddy</h1>", unsafe_allow_html=True)
+    #st.markdown("<h1 style='text-align: center; '>NutriBuddy</h1>", unsafe_allow_html=True)
+    st.title("NutriBuddy🔎")
     with st.container(height=350):
         st.markdown("### How this works:")
         st.markdown("1. **Scan Barcode**:  Use the scanner in the sidebar to scan the barcode of the item you want to explore.  ")    
@@ -130,7 +131,7 @@ def main():
         values = [protein, total_fat, carbohydrates]
 
         plt.style.use('bmh')
-        fig, ax = plt.subplots(figsize=(8, 4))
+        fig, ax = plt.subplots(figsize=(6, 5))
         ax.pie(values, labels=labels, autopct='%1.1f%%', startangle=90)
         ax.axis('equal')
 
