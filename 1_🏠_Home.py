@@ -17,13 +17,13 @@ def main():
     page_icon="🥫",
     )
 
-    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    client = OpenAI(api_key=st.secrets["openai_key"])
     
     connection = mysql.connector.connect(
         host="mysql-19ebb7c1-nutribuddy.a.aivencloud.com",
         port=10331,
         user=" avnadmin",
-        password=os.getenv("MYSQL_PASSWORD"),
+        password=st.secrets["db_password"],
         database="PRODUCTS"
     )
 
