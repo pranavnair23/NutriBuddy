@@ -84,13 +84,11 @@ def main():
         
         st.header(details[1])
 
-        col1, col2, col3 = st.columns(3)
+        col1, col2= st.columns([3,1])
         with col1:
-            st.write(' ')
-        with col2:
             st.image(details[2])
-        with col3:
-            st.write(' ')
+        with col2:
+            st.image('https://upload.wikimedia.org/wikipedia/commons/d/d6/Nutri-score-D.svg')
 
         st.write(f"Keywords: {details[5]}, {details[4]}, {details[3]}")
 
