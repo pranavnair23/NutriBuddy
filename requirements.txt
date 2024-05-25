@@ -3,5 +3,5 @@ opencv-python-headless
 numpy
 pillow
 openai
-mysql.connector
+mysql-connector-python
 matplotlib
