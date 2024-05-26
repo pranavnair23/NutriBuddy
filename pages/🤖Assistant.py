@@ -12,39 +12,7 @@ def main():
     page_icon="🥫",
     )
 
-    product_details = {
-    "product_name": "Britannia NutriChoice Digestive High Fibre Biscuits",
-    "product_image": "https://www.bigbasket.com/media/uploads/p/l/40197803_7-britannia-nutrichoice-digestive-high-fibre-biscuits-super-saver-family-pack.jpg",
-    "category": "Snacks & Branded Foods",
-    "subcategory": "Biscuits & Cookies",
-    "type": "Marie, Health, Digestive",
-    "ingredients": "Refined Wheat Flour, Whole Wheat Flour, Edible Vegetable Oil (Palm), Sugar, Wheat Bran, Liquid Glucose, Milk Solids, Maltodextrin, Raising Agents (503, 500), Iodised Salt, Emulsifiers (322, 471, 472E), Malt Extract, Dough Conditioner (223)",
-    "nutrition_facts": {
-        "Sodium": 0.0,
-        "Protein": 8.0,
-        "Calories": 493.0,
-        "Total Fat": {
-            "Value": 21.0,
-            "Trans Fat": 0.0,
-            "Saturated Fat": 10.0,
-            "Monounsaturated Fat": 8.5,
-            "Polyunsaturated Fat": 2.5
-        },
-        "Cholesterol": 0.0,
-        "Carbohydrates": {
-            "Value": 68.0,
-            "Total Sugars": {
-                "Value": 14.5,
-                "Added Sugars": None
-            },
-        "Dietary Fiber": 6.0
-        }
-    },
-    "price": 85,
-    "brand": "D"
-}
-
-    product_details_str = json.dumps(product_details)
+    product_details_str = json.dumps(st.session_state['prodDetails'])
 
 
 
